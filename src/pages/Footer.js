@@ -1,44 +1,37 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core";
+import {makeStyles} from "@material-ui/core";
 import BlockTouchBars from "../components/BlockTouchBars";
+import styled from "styled-components"
 
 import logo from "../pages/assets/logo.png";
 
-const useStyles = makeStyles((theme) => ({
-    root: {
-        display: "flex",
-        // justifyContent: "center",
-        flexDirection: "column",
-        marginLeft: "auto",
-        marginRight: "auto",
+const Div = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 234px;
+`;
 
-        paddingTop: "234px",
+const Img = styled.img`
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+  height: 103px;
+`;
 
-    },
-
-    img: {
-
-        marginLeft: "auto",
-        marginRight: "auto",
-        width: "250px",
-        height: "103px",
-    },
-
-    text: {
-        paddingBottom: "146px",
-        textAlign: "center",
-
-
-    }
-}));
+const Text = styled.p`
+  padding-bottom: 146px;
+  text-align: center;
+`
 
 export default function Footer() {
-    const classes = useStyles();
-    return (
-        <div className={classes.root}>
-            <img className={classes.img} src={logo}/>
-            <p className={classes.text}>soon in 2021</p>
-        </div>
-    )
+  return (
+    <Div>
+      <Img src={logo}/>
+      <Text >soon in 2021</Text>
+    </Div>
+
+  )
 }
 
