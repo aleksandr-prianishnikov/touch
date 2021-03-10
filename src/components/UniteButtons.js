@@ -6,14 +6,12 @@ import styled from "styled-components";
 const Text1 = styled.p`
   margin: 0;
   text-align: left;
-  padding-left: 65px;
-  margin-top: 200px;
-  padding-bottom: 23px;
-  font-size: 80px;
+  padding-left: 5.4%; //65px  
+  margin-top: 20%; //200px
+  padding-bottom: 1.6%; //23px
+  font-size: 6.6vw; //80px
   font-style: normal;
   font-weight: 700;
-  line-height: 97px;
-  letter-spacing: 0em;
 `;
 
 const Text2 = styled.p`
