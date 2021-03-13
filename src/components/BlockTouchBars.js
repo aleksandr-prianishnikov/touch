@@ -1,8 +1,5 @@
 import React from "react";
 
-import touchbar from "../pages/assets/touchbars/touchbar.png";
-import touchbar1 from "../pages/assets/touchbars/touchbar1.png";
-import touchbar2 from "../pages/assets/touchbars/touchbar2.png";
 import img from "../pages/assets/img.png";
 import styled from "styled-components";
 import TouchBar from "./TouchBar";
@@ -18,7 +15,7 @@ const Text = styled.p`
   margin-top: 5px;
   margin-left: 25px;
   margin-bottom: 100px;
-  font-size: 36px;
+  font-size: 2.9vw; //36px
 `;
 
 export default function BlockTouchBars() {
@@ -27,8 +24,9 @@ export default function BlockTouchBars() {
       <div>
         <TouchBar/>
         <Text>Swipe to set up volume and brightness</Text>
-      </div><
-      div>
+      </div>
+      <
+        div>
         <TouchBar/>
         <Text>Swipe to set up volume and brightness</Text>
       </div>
@@ -36,11 +34,7 @@ export default function BlockTouchBars() {
         <TouchBar/>
         <Text>Swipe to set up volume and brightness</Text>
       </div>
-
-
-
-
-      <Img style={{paddingTop: "180px"}} src={img}/>
+      <Img style={{paddingTop: "16vw"}} src={img}/>
     </div>
   )
 }

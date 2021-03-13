@@ -1,9 +1,7 @@
 import React from "react";
-import {makeStyles} from "@material-ui/core";
 import header2 from "./assets/header2.png";
 import bg2 from "./assets/bg2.png";
 import styled from "styled-components"
-import MediaQuery from "react-responsive";
 
 const Container = styled.div`
   margin: 0;

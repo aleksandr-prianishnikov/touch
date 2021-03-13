@@ -3,30 +3,29 @@ import styled from "styled-components";
 
 const Text1 = styled.p`
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 1.4vw; //23px 
   padding: 0;
-  padding-top: 139px;
 
   text-align: center;
-  padding-left: 65px;
-  margin-top: 350px;
-  font-size: 80px;
+  padding-left: 5.3vw; // 65px 
+  margin-top: 40%; //350px
+  font-size: 6vw; //80px
   font-style: normal;
   font-weight: 700;
-  line-height: 97px;
+  line-height: 8.5vw; // 97px
   letter-spacing: 0em;
 `;
 
 const Text2 = styled.p`
   margin: 0;
-  margin-bottom: 104px;
+  margin-bottom: 9vw; // 104px
   padding: 0;
   margin-top: auto;
 
   text-align: center;
-  font-size: 44px;
+  font-size: 3.5vw; //44px
   font-style: normal;
-  line-height: 53px;
+  line-height: 4vw; //53px
   letter-spacing: 0em;
   font-weight: 400;
 `;

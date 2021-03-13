@@ -16,9 +16,10 @@ const Text1 = styled.p`
 
 const Text2 = styled.p`
   margin: 0;
-  padding-bottom: 60px;
-  padding-left: 65px;
-  font-size: 44px;
+  padding-bottom: 5vw; // 60px
+  padding-left: 5.4%; //65px  
+  font-size: 3.5vw; //44px
+  //font-size: 44px; //44px
   font-style: normal;
   line-height: 53px;
   letter-spacing: 0em;
@@ -30,6 +31,8 @@ const Img = styled.img`
   display: flex;
   justify-content: flex-end;
   position: absolute;
+  width: 100%;
+
   right: 0;
 `;
 

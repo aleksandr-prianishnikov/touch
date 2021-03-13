@@ -10,7 +10,6 @@ import MagicOfGestures from "./components/MagicOfGestures";
 import BlockTouchBars from "./components/BlockTouchBars";
 import React from "react";
 
-
 function App() {
   return (
     <div>

@@ -1,15 +1,7 @@
 import React from "react";
-import {makeStyles} from "@material-ui/core";
-import header2 from "./assets/header2.png";
-import bg2 from "./assets/bg2.png";
 import bg from "./assets/bg.png";
 import header from "./assets/header.png";
-
 import styled from "styled-components"
-
-import MediaQuery from 'react-responsive'
-
-
 
 const Container = styled.div`
   margin: 0;
@@ -18,23 +10,16 @@ const Container = styled.div`
 `;
 
 const Header = styled.img`
-  //display: block;
-  //margin: auto;
-  margin-top: 100px;
-  width: 900px;
-  height: 529px;
+  width: 100%;
+  margin-top: 4.5vw;//100px
+  width: 90vw; // 900px
+  height: 52vw; //529px
  position: absolute;
-  padding-left: 150px;
-  //vertical-align: bottom;
+  padding-left: 4.7vw;// 150px
   z-index: 1;
-
-
-  //margin-left: auto;
-  
 `;
 
 const Bg = styled.img`
-  //position: absolute; 
   margin: 0;
   width: 100%;
   vertical-align: bottom;
@@ -52,17 +37,7 @@ const Img = styled.img`
   width: 100%;
   padding: 0;
   height: auto;
-    
 `;
-
-// const Img1 = styled.img`
-//   margin: 0;
-//   width: 100%;
-//   max-width: 725px;
-//   padding: 0;
-//   height: auto;
-//   vertical-align: bottom;
-// `;
 
 export default function ImageHeader() {
   return (
@@ -70,6 +45,5 @@ export default function ImageHeader() {
     <Header src={header}/>
     <Bg src={bg}/>
   </Container>
-
   )
 }

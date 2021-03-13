@@ -1,62 +1,37 @@
 import React from "react";
-import {Button, makeStyles, withStyles} from "@material-ui/core";
-import {green, grey} from '@material-ui/core/colors';
+import {Button, withStyles} from "@material-ui/core";
+import {grey} from '@material-ui/core/colors';
 import {blue} from "@material-ui/core/colors";
 import styled from "styled-components";
-import light_icon from "../pages/assets/icons/light_icon.svg";
-import light2_icon from "../pages/assets/icons/light2_icon.svg";
-import sound from "../pages/assets/icons/sound_icon.svg";
-import soundoff from "../pages/assets/icons/soundoff_icon.svg";
-import sun from "../pages/assets/icons/sun_icon.svg";
-
-
-
-import btnLight from "../pages/assets/touchbar/light.png";
 
 const Div = styled.div`
   display: flex;
   align-items: center;
-  width: 1150px;
-  margin-left: 25px;
-  margin-right: 50px;
-  height: 49px;
+  width: 95vw; // 1150px
+  margin-left: 2%;
+  margin-right: 5%;
+  min-width: 1080px;
+  min-height: 48px;
+  height: 5vw; //49px
   background-color: #303030;
   justify-content: space-around;
   border-radius: 7px;
 `;
 
 const Text = styled.p`
-  //font-size: 24px;
-  //font-style: normal;
-  //font-weight: 400;
-  //line-height: 29px;
-  //letter-spacing: 0em;
-  //text-align: left;
   color: white;
 `
 
-// const Button1 = styled.button`
-//   width: 125px;
-//   height: 48px;
-//   margin: 5px;
-//   border-radius: 10px;
-//   background-color: grey;
-// `;
-
-
-
 const ColorButton = withStyles((theme) => ({
   root: {
-    width: "100px",
-    height: "38px",
+    width: "9vw", //100px
+    height: "3.5vw",// 38 px
+    minWidth: "100px",
+    minHeight: "38px",
     marginTop: "5px",
     marginBottom: "5px",
     textColor: "#FFFFFF",
-
-
-    // margin: "5px",
     borderRadius: "7px",
-
     color: theme.palette.getContrastText(blue[500]),
     backgroundColor: grey[800],
     '&:hover': {
@@ -98,11 +73,8 @@ export default function TouchBar() {
       <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M24.0201 4.03809C13.0301 4.03809 4.03809 13.0301 4.03809 24.0201C4.03809 35.0081 13.0301 44.0001 24.0201 44.0001C35.0081 44.0001 44.0001 35.0081 44.0001 24.0201C44.0001 13.0301 35.1081 4.03809 24.0201 4.03809ZM33.2101 32.9101C32.8121 33.5081 32.1121 33.7101 31.5101 33.3121C26.8121 30.4121 20.9181 29.8121 13.9241 31.4101C13.2281 31.6141 12.6281 31.1141 12.4281 30.5121C12.2261 29.8121 12.7261 29.2161 13.3281 29.0141C20.9181 27.3141 27.5141 28.0161 32.7081 31.2141C33.4081 31.5121 33.5081 32.3101 33.2101 32.9101ZM35.6101 27.4161C35.1081 28.1141 34.2101 28.4141 33.5081 27.9141C28.1141 24.6221 19.9241 23.6181 13.6301 25.6181C12.8341 25.8201 11.9301 25.4181 11.7321 24.6221C11.5301 23.8181 11.9321 22.9181 12.7301 22.7181C20.0221 20.5221 29.0161 21.6221 35.2081 25.4201C35.8081 25.7181 36.1081 26.7161 35.6101 27.4161ZM35.8081 21.8181C29.4141 18.0241 18.7241 17.6241 12.6281 19.5261C12.1645 19.6597 11.6673 19.6095 11.2397 19.386C10.8121 19.1626 10.4871 18.783 10.3321 18.3261C10.1961 17.8619 10.2449 17.3632 10.4682 16.9342C10.6914 16.5051 11.0719 16.179 11.5301 16.0241C18.6241 13.9261 30.3141 14.3241 37.7081 18.7261C38.6061 19.2241 38.9061 20.4241 38.4061 21.3221C37.9061 22.0221 36.7081 22.3181 35.8081 21.8181Z" fill="#27AE60"/>
       </svg>
-
-
       <Text>Boulevard Depo - OFFTOP</Text>
       <p style={{marginRight: "100px"}}></p>
-
 
       {/*sound*/}
       <ColorButton>
