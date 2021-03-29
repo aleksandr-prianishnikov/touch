@@ -25,8 +25,7 @@ export default function BlockTouchBars() {
         <TouchBar/>
         <Text>Swipe to set up volume and brightness</Text>
       </div>
-      <
-        div>
+      <div>
         <TouchBar/>
         <Text>Swipe to set up volume and brightness</Text>
       </div>

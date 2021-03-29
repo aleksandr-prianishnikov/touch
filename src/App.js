@@ -9,6 +9,9 @@ import UniteButtons from "./components/UniteButtons";
 import MagicOfGestures from "./components/MagicOfGestures";
 import BlockTouchBars from "./components/BlockTouchBars";
 import React from "react";
+import { Controller, Scene } from 'react-scrollmagic';
+
+
 
 function App() {
   return (

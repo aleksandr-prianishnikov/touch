@@ -1,9 +1,12 @@
-import React from "react";
+import React, {useRef} from "react";
 import TouchBar from "./TouchBar";
 import styled from "styled-components";
+import gsap from "gsap";
+import {useIntersection} from "react-use";
+
 
 const Text1 = styled.p`
-  margin: 0;
+  //margin: 0;
   margin-bottom: 5vw;
   text-align: center;
   font-size: 6vw;
@@ -11,6 +14,7 @@ const Text1 = styled.p`
 `;
 
 export default function CustomiseTouchBar() {
+
   return (
     <div>
       {/*<Text1 style={{paddingTop: "250px"}}>Customise your TouchBar</Text1>*/}

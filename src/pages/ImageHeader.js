@@ -1,7 +1,8 @@
-import React from "react";
-import bg from "./assets/bg.png";
-import header from "./assets/header.png";
-import styled from "styled-components"
+import React from 'react';
+import bg from './assets/bg.png';
+import header from './assets/header.png';
+import styled from 'styled-components';
+
 
 const Container = styled.div`
   margin: 0;
@@ -11,11 +12,11 @@ const Container = styled.div`
 
 const Header = styled.img`
   width: 100%;
-  margin-top: 4.5vw;//100px
+  margin-top: 4.5vw; //100px
   width: 90vw; // 900px
   height: 52vw; //529px
- position: absolute;
-  padding-left: 4.7vw;// 150px
+  position: absolute;
+  padding-left: 4.7vw; // 150px
   z-index: 1;
 `;
 
@@ -24,7 +25,6 @@ const Bg = styled.img`
   width: 100%;
   vertical-align: bottom;
   filter: blur(3px);
-
 `;
 
 const Div = styled.div`
@@ -40,10 +40,11 @@ const Img = styled.img`
 `;
 
 export default function ImageHeader() {
+
   return (
-  <Container>
-    <Header src={header}/>
-    <Bg src={bg}/>
-  </Container>
-  )
+    <Container>
+      <Header src={header}/>
+      <Bg src={bg} />
+    </Container>
+  );
 }
